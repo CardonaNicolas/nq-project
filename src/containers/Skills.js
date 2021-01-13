@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Skills from '../components/Skills/Skills';
+import Skills from 'src/components/Skills/Skills';
 
 const mapStateToProps = (state) => ({
 });

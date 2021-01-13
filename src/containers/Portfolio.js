@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Portfolio from '../components/Portfolio/Portfolio';
+import Portfolio from 'src/components/Portfolio/Portfolio';
 
 const mapStateToProps = (state) => ({
 });

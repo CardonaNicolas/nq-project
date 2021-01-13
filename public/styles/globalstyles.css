@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "dk lemon";
+    src: url("../fonts/DK-Lemon.otf");
+}
+
+@font-face {
+    font-family: "century gothic";
+    src: url("../fonts/CenturyGothic.ttf");
+}
+
+body {
+    font-family: "century gothic";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "dk lemon";
+    text-transform: uppercase;
+}
