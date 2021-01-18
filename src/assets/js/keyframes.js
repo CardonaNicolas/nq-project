@@ -21,7 +21,7 @@ export const bounce = keyframes`
             transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
-    opacity: 1;
+    opacity: 0;
   }
   24% {
     opacity: 1;
@@ -166,4 +166,17 @@ export const flipverticalleft = keyframes`{
                 transform: translateZ(0) rotateX(0);
       }
 }`
+
+export const homeslideinleft = keyframes`{
+        0% {
+            -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+            opacity: 1;
+        }
+    }`
   

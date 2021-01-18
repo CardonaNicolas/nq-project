@@ -70,6 +70,10 @@ width: 100px;
             }
         }
     }
+
+    .active-menu .nav-icons-menu {
+        color: #02cbc7;
+    }
 }
 
 .nav-container-socials {

@@ -107,7 +107,11 @@ const HomeStyled = styled.div`
     }
 
     .container-home-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 65%;
+        height: 100%;
         padding-left: 10vw;
         font-size: 60px;
         color: #fff;
@@ -140,6 +144,37 @@ const HomeStyled = styled.div`
             margin-top: 2%;
             font-family: 'century gothic';
             animation: ${invisible} 0s 1.5s, ${slideinbottom} 0.5s 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .container-contact {
+            font-size: 1vw;
+            line-height: 3vh;
+            animation: ${bounce} 0.5s 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            svg {
+                color: #02cbc7;
+            }
+
+            a {
+                color: #02cbc7;
+                position: relative;
+                transition: color .4s ease-out;
+                padding-bottom: 2px;
+
+                &:after {
+                    border-top: 2px solid #02cbc7;
+                    content: "";
+                    position: absolute;
+                        right: 100%;
+                        bottom: 0px;
+                        left: 3px;
+                    transition: right .4s cubic-bezier(0,.5,0,1);
+                }
+
+                &:hover:after {
+                    right: 0;
+                }
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ const Nav = () => {
           <ul>
             <li>
               <NavLink
-                activeClassName=""
+                activeClassName="active-menu"
                 className=""
                 exact
                 to="/"
@@ -35,7 +35,7 @@ const Nav = () => {
             </li>
             <li>
               <NavLink
-                activeClassName=""
+                activeClassName="active-menu"
                 className=""
                 exact
                 to="/compétences"
@@ -46,7 +46,7 @@ const Nav = () => {
             </li>
             <li>
               <NavLink
-                activeClassName=""
+                activeClassName="active-menu"
                 className=""
                 exact
                 to="/réalisations"
@@ -55,9 +55,9 @@ const Nav = () => {
                 <div>Portfolio</div>
               </NavLink>
             </li>
-            <li>
+            {/*  <li>
               <NavLink
-                activeClassName=""
+                activeClassName="active-menu"
                 className=""
                 exact
                 to="/contact"
@@ -66,6 +66,7 @@ const Nav = () => {
                 <div>Contact</div>
               </NavLink>
             </li>
+            */}
           </ul>
         </nav>
       </div>
