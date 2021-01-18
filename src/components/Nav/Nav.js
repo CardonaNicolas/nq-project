@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { 
   FaLinkedinIn, 
   FaGithub, 
@@ -22,34 +23,61 @@ const Nav = () => {
         <nav>
           <ul>
             <li>
-              <a href="">
-                  <FaHome className="nav-icons-menu" />
-                  <div>Home</div>
-                </a>
+              <NavLink
+                activeClassName=""
+                className=""
+                exact
+                to="/"
+              >
+                <FaHome className="nav-icons-menu" />
+                <div>Home</div>
+              </NavLink>
             </li>
             <li>
-              <a href="">
+              <NavLink
+                activeClassName=""
+                className=""
+                exact
+                to="/compétences"
+              >
                 <FaTools className="nav-icons-menu" />
                 <div>Skills</div>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="">
+              <NavLink
+                activeClassName=""
+                className=""
+                exact
+                to="/réalisations"
+              >
                 <FaEye className="nav-icons-menu" />
                 <div>Portfolio</div>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="">
+              <NavLink
+                activeClassName=""
+                className=""
+                exact
+                to="/contact"
+              >
                 <FaEnvelope className="nav-icons-menu" />
                 <div>Contact</div>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
       </div>
       <div className="nav-container-logo">
+        <NavLink
+          activeClassName=""
+          className=""
+          exact
+          to="/"
+        >
           <img src={logo} alt="Logo NQ"/>
+        </NavLink>
       </div>
       <div className="nav-container-socials">
           <a href="https://www.linkedin.com/in/nicolascardona"><FaLinkedinIn className="nav-icons-socials" /></a>

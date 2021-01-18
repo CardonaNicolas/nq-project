@@ -18,29 +18,53 @@ const Home = () => {
       <div className="container-home">
         <div className="container-home-image">
           <h2>Des sites web clé en main</h2>
-          <div className="container-single-picto">
-            <img src={analyse} alt="picto site analyse"/>
-            <h3>Analyse statistique</h3>
+          <div className="home-img-top" >
+            <div className="container-single-picto">
+              <img src={analyse} alt="picto site analyse"/>
+              <h3>Analyse statistique</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus turpis eu ante faucibus, non sollicitudin ante accumsan. Sed finibus neque justo, ut eleifend ante lacinia at. Vestibulum ac posuere erat. Vestibulum sit amet tellus sollicitudin, gravida lacus vel, elementum dolor.</p>
+              </div>
+            </div>
+            <div className="container-single-picto">
+              <img src={custom} alt="picto tools"/>
+              <h3>100% personnalisable</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus turpis eu ante faucibus, non sollicitudin ante accumsan. Sed finibus neque justo, ut eleifend ante lacinia at. Vestibulum ac posuere erat. Vestibulum sit amet tellus sollicitudin, gravida lacus vel, elementum dolor.</p>
+              </div>
+            </div>
           </div>
-          <div className="container-single-picto">
-            <img src={custom} alt="picto tools"/>
-            <h3>100% personnalisable</h3>
+          <div className="home-img-middle">
+            <div className="container-single-picto">
+              <img src={security} alt="picto warning"/>
+              <h3>Sécurisé</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus turpis </p>
+              </div>
+            </div>
+            <div className="container-single-picto">
+              <img src={update} alt="picto update site"/>
+              <h3>Simple à mettre à jour</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus turpis eu ante faucibus, non sollicitudin ante accumsan. Sed finibus neque justo, ut eleifend ante lacinia at. Vestibulum ac posuere erat. Vestibulum sit amet tellus sollicitudin, gravida lacus vel, elementum dolor..</p>
+              </div>
+            </div>
           </div>
-          <div className="container-single-picto">
-            <img src={security} alt="picto warning"/>
-            <h3>Sécurisé</h3>
-          </div>
-          <div className="container-single-picto">
-            <img src={update} alt="picto update site"/>
-            <h3>Simple à mettre à jour</h3>
-          </div>
-          <div className="container-single-picto">
-            <img src={seo} alt="picto seo"/>
-            <h3>Référencement naturel optimisé</h3>
-          </div>
-          <div className="container-single-picto">
-            <img src={responsive} alt="picto desktop"/>
-            <h3>Responsive design</h3>
+          <div className="home-img-bottom">
+            <div className="container-single-picto">
+              <img src={seo} alt="picto seo"/>
+              <h3>Référencement naturel</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus turpis eu ante faucibus, non sollicitudin ante accumsan. Sed finibus neque justo, ut eleifend ante lacinia at. Vestibulum ac posuere erat. Vestibulum sit amet tellus sollicitudin, gravida lacus vel, elementum dolor..</p>
+              </div>
+            </div>
+            <div className="container-single-picto">
+              <img src={responsive} alt="picto desktop"/>
+              <h3>Responsive design</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus turpis eu ante faucibus, non sollicitudin ante accumsan. Sed finibus neque justo, ut eleifend ante lacinia at. Vestibulum ac posuere erat. Vestibulum sit amet tellus sollicitudin, gravida lacus vel, elementum dolor.</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="container-home-title">

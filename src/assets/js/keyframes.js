@@ -16,11 +16,56 @@ export const invisible = keyframes`
 `
 
 export const bounce = keyframes`
-0% { transform: translateY(0px) }
-25% { transform: translateY(20px) }
-50% { transform: translateY(0px) }
-75% { transform: translateY(30px) }
-100% { transform: translateY(0px) }
+0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
 `
 
 export const slideintop = keyframes`{
@@ -91,3 +136,34 @@ export const textanim = keyframes`{
         opacity: 1;
     }
 }`
+
+export const slideinbckcenter = keyframes `{
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}`
+
+export const flipverticalleft = keyframes`{
+    0% {
+        -webkit-transform: translateZ(-800px) rotateX(90deg);
+                transform: translateZ(-800px) rotateX(90deg);
+        opacity: 0;
+      }
+      54% {
+        -webkit-transform: translateZ(-160px) rotateX(87deg);
+                transform: translateZ(-160px) rotateX(87deg);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: translateZ(0) rotateX(0);
+                transform: translateZ(0) rotateX(0);
+      }
+}`
+  
