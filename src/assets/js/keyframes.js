@@ -167,7 +167,7 @@ export const flipverticalleft = keyframes`{
       }
 }`
 
-export const homeslideinleft = keyframes`{
+export const pageslideinleft = keyframes`{
         0% {
             -webkit-transform: translateX(-100%);
                     transform: translateX(-100%);

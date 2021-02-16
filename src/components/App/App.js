@@ -6,6 +6,7 @@ import Home from 'src/containers/Home';
 import Skills from 'src/containers/Skills';
 import Portfolio from 'src/containers/Portfolio';
 import SwitchMode from 'src/containers/SwitchMode';
+import Nav from 'src/containers/Nav';
 
 function App() {
   return (
@@ -13,12 +14,17 @@ function App() {
       <Switch>
         <Route key="3" path="/réalisations">
           <Portfolio />
+          <Nav />
+          <SwitchMode />
         </Route>
         <Route key="2" path="/compétences">
           <Skills />
+          <Nav />
+          <SwitchMode />
         </Route>
         <Route key="1" path="/">
           <Home />
+          <Nav />
           <SwitchMode />
         </Route>
       </Switch>

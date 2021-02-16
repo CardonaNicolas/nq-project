@@ -6,8 +6,6 @@ import {
   FaPhoneAlt
 } from 'react-icons/fa';
 
-import Nav from 'src/containers/Nav';
-
 import analyse from 'public/img/icondev1.png';
 import custom from 'public/img/icondev2.png';
 import security from 'public/img/icondev3.png';
@@ -19,7 +17,6 @@ const Home = () => {
 
   return (
     <HomeStyled>
-      <Nav />
       <div className="container-home">
         <div className="container-home-image">
           <h2>Des sites web clé en main</h2>

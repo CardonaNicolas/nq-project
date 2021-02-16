@@ -3,8 +3,9 @@ import { rotate, visible, invisible } from 'src/assets/js/keyframes';
 
 const NavStyled = styled.div`
 position: fixed;
-z-index: 2;
+z-index: 10;
 right: 0;
+top: 0;
 height: 100vh;
 background-color: #282828;
 display: flex;
