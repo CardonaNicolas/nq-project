@@ -5,6 +5,21 @@ export const rotate = keyframes`
 100% { transform: rotate(360deg) }
 `
 
+export const bcg = keyframes`
+0% {    
+        background-image.
+        background-position: top left;
+}
+50% { 
+        background: linear-gradient(#434360, #02cbc7);
+        background-position: -50% 0;
+}
+100% {  
+        background: linear-gradient(#434360, #02cbc7);
+        background-position: 0 0;
+}
+`
+
 export const visible = keyframes`
 0% { opacity: 0 }
 100% { opacity: 1 }

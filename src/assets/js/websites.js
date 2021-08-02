@@ -1,11 +1,11 @@
 export default [
     {
         id: 1,
-        url:'https://www.docteurs-leclercq-alsamman.com/',
-        img:'alsamman.png',
-        title:'Docteurs Leclercq & Al Samman',
-        description:'Spécialistes de la chirugrgie viscérale, de la chirurgie de la chirurgie du périné.',
-        technologies: 'Wordpress, PHP, HTML, CSS, Javascript',
+        url:'https://www.cfossau.fr/',
+        img:'cfossau.png',
+        title:'CF Ossau',
+        description:"Site web de Cf Ossau, nouvelle salle de sport dans la vallée d'Ossau. Découvrez notre méthode d'entrainement/préparation physique accessible à tous.",
+        technologies: 'React, Redux, EmailJS, SCSS, Javascript',
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export default [
     },
     {
         id: 3,
-        url:'https://docteur-robertlang.fr/',
+        url:'https://dr-ruchier-berquet-esthetique.com/',
         img:'ruchierberquet.png',
         title:'Docteur Ruchier-Berquet',
         description:'Médecine esthétique du corps et du visage. Pôle santé de Roquefort-les-Pins.',
@@ -33,10 +33,10 @@ export default [
     },
     {
         id: 5,
-        url:'https://tricoche-spirits.com/',
-        img:'tricoche.png',
-        title:'Tricoche Spirits',
-        description:'Fabrique de Rhum arrangé et agricole.',
+        url:'https://www.emmadamen.fr/',
+        img:'emmad.png',
+        title:'Emma Damen',
+        description:"Site web d'Emma Damen ou Madafit, coach et entrepreneuse dans le domaine du sport. Vous y trouverez mes prestations, tarifs et Ebooks !",
         technologies: 'Wordpress, PHP, HTML, CSS, Javascript',
     },
     {
@@ -60,7 +60,7 @@ export default [
         url:'https://hoistgroup-sav.fr/',
         img:'hoist.png',
         title:'Hoistgroup',
-        description:"Site e-commerce de télécommande pour chambre d'hôtel.",
+        description:"Site e-commerce de télécommandes pour chambre d'hôtel.",
         technologies: 'Wordpress, PHP, HTML, CSS, Javascript, woocommerce',
     },
     {
@@ -73,22 +73,14 @@ export default [
     },
     {
         id: 10,
-        url:'https://xtra-ordinaire.fr/',
-        img:'xtra.png',
-        title:'Xtra-ordinnaire',
-        description:"Site de mise en ralation entre des entreprise et des extras dans la restauration, l'hôtelerie, le clubbing et le commerce.",
+        url:'https://burger-theory.paris/',
+        img:'bt.png',
+        title:'Burger Theory',
+        description:"Restaurant de burger vegan, livraison et vente à emporter.",
         technologies: 'Wordpress, PHP, HTML, CSS, Javascript',
     },
     {
         id: 11,
-        url:'https://burger-theory.paris/',
-        img:'bt.png',
-        title:'Burger Theory',
-        description:"Restaurant de burger vegan, livraison et vente a emporter.",
-        technologies: 'Wordpress, PHP, HTML, CSS, Javascript',
-    },
-    {
-        id: 12,
         url:'https://patrimoine.cecca.fr/',
         img:'ceccap.png',
         title:'Cecca Patrimoine',
@@ -96,11 +88,11 @@ export default [
         technologies: 'Wordpress, PHP, HTML, CSS, Javascript',
     },
     {
-        id: 13,
+        id: 12,
         url:'https://safe-training-be-stronger.fr/',
         img:'stbs.png',
         title:'Safe training be stronger',
-        description:'Equipe de coachs sportif.',
+        description:'Equipe de coachs sportifs.',
         technologies: 'Wordpress, PHP, HTML, CSS, Javascript',
     },
 ]

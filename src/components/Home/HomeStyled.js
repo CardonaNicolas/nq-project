@@ -1,24 +1,24 @@
 import styled from 'styled-components';
 import { slideintop, slideinbottom, slideinleft, slideinright, invisible, bounce, slideinbckcenter, flipverticalleft, pageslideinleft } from 'src/assets/js/keyframes';
+import { motion } from 'framer-motion'
 
-const HomeStyled = styled.div`
+const HomeStyled = styled(motion.section)`
+overflow: hidden;
 
 .container-home {
-    background-color: #3d3d3d;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: ${pageslideinleft} 0.5s 0s linear both;
 
     .container-home-image {
         width: 30%;
         z-index:100;
         height: 100%;
         text-align: center;
-        background-color: #564147;
-        animation: ${invisible} 0s 2, ${slideinbckcenter} 0.5s 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background-color: #282828;
+        
 
         h2 {
             width: 100%;
@@ -33,7 +33,7 @@ const HomeStyled = styled.div`
             width: 100%;
             height: 30%;
             display: flex;
-            flex-direction: wrap;
+            flex-wrap: wrap;
         }
 
         .home-img-top {
@@ -83,6 +83,19 @@ const HomeStyled = styled.div`
             justify-content: space-evenly;
             align-items: center;
             overflow: hidden;
+            
+            div {
+                display: none;
+                height: 100%;
+                width: 102%;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: left;
+                color: #fff;
+                background-color: rgba(0,0,0,0.5);
+                opacity: 0;
+                transition: opacity 1s;
+            }
 
             &:hover {
                 img, h3 {
@@ -93,18 +106,6 @@ const HomeStyled = styled.div`
                     display: flex;
                     align-items: center;
                 }
-            }
-
-            div {
-                display: none;
-                height: 100%;
-                width: 102%;
-                padding: 20px;
-                box-sizing: border-box;
-                text-align: justify;
-                color: #fff;
-                background-color: #000;
-                animation: ${flipverticalleft} 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
             }
 
             img {
@@ -133,22 +134,23 @@ const HomeStyled = styled.div`
         h1 {
             display: block;
             font-size: 5vw;
-            animation: ${slideintop} 0.5s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
         }
 
         h2 {
             display: block;
             font-size: 4vw;
             margin-top: 2%;
-            animation: ${invisible} 0s 0.5s,  ${slideinright} 0.5s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
         }
 
         hr {
             display: block;
             width: 30%;
-            color: #000;
+            height: 0;
+            border: 2px solid #02cbc7;
             margin: 0.5% 0 2% 0;
-            animation: ${invisible} 0s 1s, ${slideinleft} 0.5s 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
         }
 
         h3 {
@@ -156,13 +158,13 @@ const HomeStyled = styled.div`
             font-size: 1.5vw;
             margin-top: 2%;
             font-family: 'century gothic';
-            animation: ${invisible} 0s 1.5s, ${slideinbottom} 0.5s 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
         }
 
         .container-contact {
             font-size: 1vw;
             line-height: 3vh;
-            animation: ${bounce} 0.5s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 
             svg {
                 color: #02cbc7;
@@ -188,6 +190,128 @@ const HomeStyled = styled.div`
                     right: 0;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+
+    .container-home {
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .container-home-image{
+            width: 100%;
+            padding-right: 100px;
+            box-sizing: border-box;
+            margin-top: 50px;
+
+            h2 {
+                padding: 20px 0px;
+                font-size: 30px;
+            }
+
+            .home-img-top, .home-img-middle, .home-img-bottom {
+                flex-direction: column;
+
+                .container-single-picto {
+                    width: 100%;
+                    height: auto;
+                    padding: 20px 0;
+
+                    &:hover {
+                        img, h3 {
+                            display: inline;
+                        }
+                    }
+
+                    img {
+                        width: 120px;
+                    }
+
+                    h3 {
+                        padding-top: 20px;
+                        font-size: 22px;
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                        margin-top: 20px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .container-home-title {
+            width: 100%;
+            padding: 50px 150px 0px 50px;
+            box-sizing: border-box;
+
+            h1 {
+                font-size: 7vw;
+            }
+
+            h2 {
+                font-size: 5.5vw;
+            }
+
+            h3 {
+                font-size: 2.5vw;
+            }
+
+            .container-contact {
+                margin-top: 50px;
+
+                p {
+                    font-size: 2vw;
+                    line-height: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+
+
+
+
+    .container-home {
+    
+        .container-home-image{
+            padding-right: 0px;
+        }
+
+        .container-home-title {
+            width: 100%;
+            box-sizing: border-box;
+
+            h1 {
+                font-size: 60px;
+            }
+
+            h2 {
+                font-size: 45px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+
+            .container-contact {
+                margin-top: 50px;
+
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+
         }
     }
 }

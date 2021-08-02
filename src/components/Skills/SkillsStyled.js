@@ -1,101 +1,94 @@
 import styled from 'styled-components';
-import { pageslideinleft, logoIn, boostrapAnim, cssAnim, diviAnim, gitAnim, htmlAnim, jsAnim, linuxAnim, nodejsAnim, reduxAnim, shopifyAnim, wooAnim, wordpressAnim, reactAnim } from 'src/assets/js/keyframes';
+import { motion } from 'framer-motion'
 
-const SkillsStyled = styled.div`
-    background-color: #3d3d3d;
+const SkillsStyled = styled(motion.section)`
     width: 100vw;
     height: 100vh;
-    animation: ${pageslideinleft} 0.5s 0s linear both;
 
     .logo-container {
         height: 100%;
-        position: relative;
         margin-right: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
 
-        .bootstrap, .css, .html, .woo, .wordpress, .react, .git, .js, .linux, .shopify, .redux, .nodejs {
-            width: 5vw;
-            position: absolute;
+        h2 {
+            color: #fff;
+            font-size: 40px;
+            text-align: center;
         }
 
+        .skill-wrapper {
+            width: 100%;
+            margin: 0 auto;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
 
-        .bootstrap {
-            top: 90%;
-            left: 90%;
-            animation: ${logoIn} 0.5s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${boostrapAnim} 10s linear 1s;
+            .divi, .bootstrap, .css, .html, .woo, .wordpress, .react, .git, .js, .linux, .shopify, .redux, .nodejs {
+                width: 50px;
+                padding-right: 20px;
+            }
+
+            .loader-container {
+                height: 30x;
+                width: 80%;
+                background-color: #fff;
+                border-radius: 5px;
+                color:#fff;
+
+                .loader {
+                    background-color: #02cbc7;
+                    width: 20px;
+                    height: 30px;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    padding: 7px 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .loader-pourcentage {
+                padding-left: 20px;
+                font-size:30px;
+                color: #fff;
+                font-weight: bold;
+                font-family: "dk lemon";
+            }
+        }
+    }
+    @media screen and (max-width: 1400px){
+        height: auto;
+        padding-bottom: 50px;
+
+        h2 {
+            padding: 30px 0 0 0 ;
         }
 
-        .css {
-            top: 80%;
-            left: 80%;
-            animation: ${logoIn} 0.5s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${cssAnim} 10s linear 1.5s;
-        }
+        .logo-container {
 
-        .divi {
-            width: 10vw;
-            position: absolute;
-            top: 70%;
-            left: 30%;
-            animation: ${logoIn} 0.5s 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${diviAnim} 10s linear 2s;
+            .skill-wrapper {
+                margin-top: 50px;
+                width: 100%;
+                .loader-container {
+                    width: 70%;
+                }
+            }
         }
+    }
 
-        .git {
-            top: 20%;
-            left: 30%;
-            animation: ${logoIn} 0.5s 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${gitAnim} 10s linear 2.5s;
-        }
+    @media screen and (max-width: 767px){
 
-        .html {
-            top: 10%;
-            left: 60%;
-            animation: ${logoIn} 0.5s 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${htmlAnim} 10s linear 3s;
-        }
+        .logo-container {
+            margin-right: 0;
 
-        .js {
-            top: 40%;
-            left: 80%;
-            animation: ${logoIn} 0.5s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${jsAnim} 10s linear 3.5s;
-        }
-
-        .linux {
-            top: 50%;
-            left: 70%;
-            animation: ${logoIn} 0.5s 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${linuxAnim} 10s linear 4s;
-        }
-
-        .nodejs {
-            top: 40%;
-            left: 10%;
-            animation: ${logoIn} 0.5s 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${nodejsAnim} 10s linear 4.5s;
-        }
-
-        .redux {
-            top: 20%;
-            left: 80%;
-            animation: ${logoIn} 0.5s 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${reduxAnim} 10s linear 5s;
-        }
-
-        .shopify {
-            top: 30%;
-            left: 90%;
-            animation: ${logoIn} 0.5s 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${shopifyAnim} 10s linear 5.5s;
-        }
-
-        .woo {
-            top: 50%;
-            left: 50%;
-            animation: ${logoIn} 0.5s 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${wooAnim} 10s linear 6s;
-        }
-
-        .wordpress {
-            top: 30%;
-            left: 30%;
-            animation: ${logoIn} 0.5s 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${wordpressAnim} 10s linear 6.5s;
-        }
-
-        .react {
-            top: 60%;
-            left: 10%;
-            animation: ${logoIn} 0.5s 6.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${reactAnim} 10s linear 5.5s;
+            .skill-wrapper {
+                .loader-container {
+                    width: 60%;
+                }
+            }
         }
     }
 `

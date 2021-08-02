@@ -1,33 +1,45 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import AppStyled from './AppStyled';
+import 'animate.css'
+import { AnimatePresence } from "framer-motion"
 
 import Home from 'src/containers/Home';
 import Skills from 'src/containers/Skills';
 import Portfolio from 'src/containers/Portfolio';
-import SwitchMode from 'src/containers/SwitchMode';
 import Nav from 'src/containers/Nav';
+import Tarif from 'src/containers/Tarif';
+import Legal from 'src/components/Legal'
+import SimpleMenu from 'src/components/SimpleMenu'
 
 function App() {
+
+  const location = useLocation();
   return (
     <AppStyled>
-      <Switch>
-        <Route key="3" path="/réalisations">
-          <Portfolio />
-          <Nav />
-          <SwitchMode />
-        </Route>
-        <Route key="2" path="/compétences">
-          <Skills />
-          <Nav />
-          <SwitchMode />
-        </Route>
-        <Route key="1" path="/">
-          <Home />
-          <Nav />
-          <SwitchMode />
-        </Route>
-      </Switch>
+      <div className="bcg-wrapper">
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+        <Route path="/legal">
+            <Legal />
+          </Route>
+          <Route path="/tarif">
+            <Tarif />
+          </Route>
+          <Route path="/réalisations">
+            <Portfolio />
+          </Route>
+          <Route path="/compétences">
+            <Skills />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </AnimatePresence>
+      </div>
+      <Nav />
+      <SimpleMenu />
     </AppStyled>
   );
 }
